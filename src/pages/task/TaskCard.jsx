@@ -105,6 +105,8 @@ const TaskCard = ({item}) => {
               <p className="text-grey-500 text-sm">
                 {item.description}
               </p>
+              <p className="font-semibold text-lg text-rose-400 ">Deadline :  {item.deadline.substring(0,10).split('-').reverse().join(" - ")}</p>
+
             </div>
             <div className="flex flex-wrap gap-2 items-center">
               {item.tags.map((item, i) => (
